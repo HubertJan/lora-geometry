@@ -1,0 +1,17 @@
+cell_idx,shards_total,epochs,label_noise,tag,approx_samples
+0,256,2,0.0,collapse,78
+1,128,2,0.0,collapse,156
+2,64,2,0.4,noise,312
+3,32,2,0.4,noise,625
+4,128,3,0.0,clean,156
+5,64,3,0.0,clean,312
+6,32,2,0.3,noise,625
+7,32,1,0.0,clean,625
+8,32,2,0.0,clean,625
+9,16,2,0.0,clean,1250
+10,8,2,0.4,noise,2500
+11,8,2,0.0,clean,2500
+12,8,3,0.0,clean,2500
+13,4,2,0.0,clean,5000
+14,2,2,0.0,clean,10000
+15,1,2,0.0,clean,20000

@@ -1,0 +1,16 @@
+dataset,family,attempted,trained_ok,errored,pool_train,pool_test,loto_test_fold,loto_train_fold
+imdb,sentiment,160,160,0,112,48,160,2240
+rotten_tomatoes,sentiment,160,160,0,112,48,160,2240
+yelp_polarity,sentiment,160,160,0,112,48,160,2240
+amazon_polarity,sentiment,160,160,0,112,48,160,2240
+wiki_toxic,toxicity,160,160,0,112,48,160,2240
+toxigen,toxicity,160,160,0,112,48,160,2240
+civil_comments,toxicity,160,160,0,112,48,160,2240
+wildguard_prompt_harm,toxicity,160,160,0,112,48,160,2240
+qnli,entailment,160,160,0,112,48,160,2240
+scitail,entailment,160,160,0,112,48,160,2240
+doc_nli,entailment,160,160,0,112,48,160,2240
+vitaminc,entailment,160,160,0,112,48,160,2240
+boolq,qa,160,160,0,112,48,160,2240
+subj,subjectivity,160,160,0,112,48,160,2240
+sst2,sst2,160,160,0,112,48,160,2240

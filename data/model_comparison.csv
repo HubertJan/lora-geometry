@@ -1,0 +1,9 @@
+model,family,acc_r2,acc_spearman,n_seeds,params,source_experiment
+base_l2,equivariant-L2-regressor,0.8305,0.9535,4,123077062,2026-08-25_gl-regressor-complexity-ladder
+bilin8_l2,equivariant-L2-regressor (empty-head bilinear),0.8362,0.9459,4,395270,2026-08-25_gl-regressor-complexity-ladder
+w8_l2,equivariant-L2-regressor,0.8439,0.9518,4,811462,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,equivariant-L2-regressor,0.8396,0.9541,1,8749510,2026-08-25_gl-regressor-complexity-ladder
+base,no-norm control (deep, L2-norm removed),-0.0797,0.6319,1,123077062,2026-08-25_gl-regressor-complexity-ladder
+peftguard_qv,raw-dW conv-tower (q,v-only, no norm),-0.0164,0.7277,2,,2026-08-24_peftguard-qv-baseline
+spectral_ridge,fixed-feature baseline (ridge on singular values),0.1874,0.8197,1,,2026-08-23_simple-baselines-vs-deep-regressor
+norms_ridge,fixed-feature baseline (ridge on per-cell norms),0.1789,0.8141,1,,2026-08-23_simple-baselines-vs-deep-regressor

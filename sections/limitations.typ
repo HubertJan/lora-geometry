@@ -1,0 +1,14 @@
+#import "@preview/pergamon:0.7.1": citep
+
+= Limitations
+In this report, we mostly focused on SST2 and on binary classification tasks for evaluation. Binary classification yields a single comparable accuracy metric across adapters, which simplifies evaluation of the meta model and its robustness. In addition, compute constraints make it harder to work with more complex tasks such as coding. While we expect classification tasks similar to SST2 to give similar results, it is unclear whether much more complex tasks requiring longer training, such as coding, might exhibit more transferable weight-space structures.
+
+A particular challenge in this performance prediction task is building a balanced dataset without inducing spurious hyperparameter correlations. The two goals conflict: hyperparameters causally influence performance, so a pool with diverse hyperparameters does not yield an even spread of performance, and balancing the number of adapters per performance range is equally difficult. We therefore kept the "natural" distribution of LoRA adapters induced by our hyperparameter ranges and selectively added mid-performance adapters via label noise. Future work could investigate carefully constructed balanced datasets, which might yield better predictions.
+
+It should be noted that we performed only a limited hyperparameter search, so the meta models might perform better in practice with more extensive tuning. However, the search we did conduct yielded no major performance gains.
+
+It should also be noted that the report focused mainly on the LoL-based meta model. The geometrical baseline built on the features in @appendix-geometric-features nevertheless produced promising results, albeit worse than those of the LoL-based model. These results might be worth analysing further to better understand the relevant geometrical structures.
+
+We also simplified the task comparison by using only one chat template per task across all adapters trained on that task; setup simplification and reduced compute demands are again the primary reasons. Language models are known to be sensitive to such prompt-formatting choices #citep("sclar2024formatspread") #citep("mizrahi2024multiprompt"), and limited prior experiments showed that varying the chat template does impact robustness, but this can largely be offset by training on more diverse chat templates. More thorough experiments are needed confirm this and demonstrate that it holds across different tasks.
+
+Finally, the report focuses almost exclusively on the Llama-3.2-1B model, so our findings may in principle be architecture-specific. Limited experiments with other base models of similar or larger size (up to 8B), however, showed similar results.

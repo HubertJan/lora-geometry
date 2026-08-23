@@ -1,0 +1,68 @@
+[project]
+name = "lora-geometry"
+version = "0.1.0"
+description = "Replication code for the LoRA Geometry seminar report: adapter pools, GL-equivariant meta models, and their interpretability."
+readme = "README.md"
+requires-python = ">=3.11.11"
+dependencies = [
+    # --- core numerics / io ---
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "polars>=1.0",
+    "pandas>=2.0",
+    "safetensors>=0.4",
+    "matplotlib>=3.8",
+    "python-dotenv>=1.0",
+    # --- LoRA training + evaluation stack ---
+    # These four are pinned to the versions the paper's adapter pools were
+    # trained on. trl>=1.10 / transformers>=5.15 dropped SFTConfig.warmup_ratio
+    # and changed corpus-prep byte layout; keep them fixed so retrained adapters
+    # match the released pools. See shared_adapter_pool/README.md.
+    "torch==2.9.1",
+    "transformers==5.6.2",
+    "peft==0.19.1",
+    "trl==1.2.0",
+    "datasets==4.8.4",
+    # --- interpretability ---
+    "zennit>=1.0.0",          # LRP composites/rules for the meta classifier
+    # zennit pulls torchvision; pin the cu128 build that matches torch 2.9.1
+    # (a mismatched torchvision breaks `import transformers`, which loads it).
+    "torchvision==0.24.1",
+    # --- optional cluster orchestration (used only if you pass an executor) ---
+    "submitit>=1.5.3",
+]
+
+[project.optional-dependencies]
+# Optional experiment logging. The code runs fine without it (a no-op logger is
+# used when wandb is unavailable / WANDB_MODE=disabled).
+logging = ["wandb>=0.17"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# The three importable library packages. `experiments/` are runnable scripts
+# that import these, not a package.
+packages = ["common", "shared_adapter_pool", "meta_model"]
+
+# torch from the CUDA 12.8 index, matching the training stack above. Comment
+# this block out for a CPU-only install (sanity checks run CPU-only).
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

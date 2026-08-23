@@ -1,0 +1,7 @@
+group,value
+within_high_acc,0.9829401652799566
+within_low_acc,0.6125297121571508
+low_vs_high,0.47622450395168947
+corr_acc_vs_meancos,0.9116303482111963
+meancos_high,0.7881465446255185
+meancos_low,0.540710636899152

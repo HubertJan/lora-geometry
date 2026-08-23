@@ -1,0 +1,9 @@
+variant,label,category,acc_940a1d64,acc_6445cd96,acc_f3dbd696,mean_acc,pct_lift
+__base__,base model,reference,0.558,0.558,0.558,0.558,0.0
+original,full adapter,reference,0.9555,0.955,0.954,0.9548333333333332,100.0
+keep_attn_all,all attention,attention,0.946,0.9495,0.949,0.9481666666666668,98.3200335993281
+keep_mlp_all,all MLP,mlp,0.9465,0.949,0.948,0.9478333333333332,98.23603527929441
+keep_mlpdown_1_11,MLP-down (1-11),mlp,0.929,0.929,0.9305,0.9295,93.61612767744647
+keep_mlpdown_12_16,MLP-down (12-16),mlp,0.558,0.558,0.5595,0.5585,0.12599748005038516
+keep_qkv_all,Q+K+V only,attention,0.7375,0.8175,0.869,0.8079999999999999,62.998740025199496
+keep_o_all,keep O only,attention,0.928,0.9285,0.932,0.9295,93.61612767744647

@@ -1,0 +1,740 @@
+@inproceedings{hu2022lora, title={LoRA: Low-Rank Adaptation of Large Language Models},
+  author={Hu, Edward J. and Shen, Yelong and Wallis, Phillip and others}, booktitle={ICLR}, year={2022}}
+
+@article{unterthiner2020predicting, title={Predicting Neural Network Accuracy from Weights},
+  author={Unterthiner, Thomas and Keysers, Daniel and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2002.11448}, year={2020}}
+
+@inproceedings{navon2023dws, title={Equivariant Architectures for Learning in Deep Weight Spaces},
+  author={Navon, Aviv and Shamsian, Aviv and Achituve, Idan and others}, booktitle={ICML}, year={2023}}
+
+@inproceedings{zhou2023nfn, title={Permutation Equivariant Neural Functionals},
+  author={Zhou, Allan and Yang, Kaien and Burns, Kaylee and others}, booktitle={NeurIPS}, year={2023}}
+
+@inproceedings{zhou2023nft, title={Neural Functional Transformers},
+  author={Zhou, Allan and Yang, Kaien and Jiang, Yiding and others}, booktitle={NeurIPS}, year={2023}}
+
+@inproceedings{lim2024gmn, title={Graph Metanetworks for Processing Diverse Neural Architectures},
+  author={Lim, Derek and Maron, Haggai and Law, Marc T. and others}, booktitle={ICLR}, year={2024}}
+
+@inproceedings{kalogeropoulos2024scalegmn, title={Scale Equivariant Graph Metanetworks},
+  author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},
+  booktitle={NeurIPS}, year={2024}}
+
+@article{putterman2024lol, title={Learning on LoRAs: GL-Equivariant Processing of Low-Rank
+  Weight Spaces for Large Finetuned Models}, author={Putterman, Theo and Lim, Derek and
+  Gelberg, Yoav and Jegelka, Stefanie and Maron, Haggai},
+  journal={arXiv preprint arXiv:2410.04207}, year={2024}}
+
+@article{sun2024peftguard, title={PEFTGuard: Detecting Backdoor Attacks Against
+  Parameter-Efficient Fine-Tuning}, author={Sun, Zhen and Cong, Tianshuo and Liu, Yule and others},
+  journal={arXiv preprint arXiv:2411.17453}, year={2024}}
+
+@article{puertolas2026weightspace, title={Weight-space Detection of Backdoors in LoRA Adapters},
+  author={Puertolas Merenciano, David and Vasyagina, Ekaterina and Zhu, Kevin and
+  Ferrando, Javier and Chaudhary, Maheep},
+  journal={arXiv preprint arXiv:2602.15195}, year={2026}}
+
+@inproceedings{ilharco2023task, title={Editing Models with Task Arithmetic},
+  author={Ilharco, Gabriel and Ribeiro, Marco Tulio and Wortsman, Mitchell and others},
+  booktitle={ICLR}, year={2023}}
+
+@inproceedings{stoica2025knots, title={Model Merging with SVD to Tie the Knots},
+  author={Stoica, George and Ramesh, Pratik and Ecsedi, Boglarka and others},
+  booktitle={ICLR}, year={2025}}
+
+@article{zhao2024loralego, title={Merging LoRAs like Playing LEGO: Pushing the Modularity of
+  LoRA to Extremes Through Rank-Wise Clustering}, author={Zhao, Ziyu and others},
+  journal={arXiv preprint arXiv:2409.16167}, year={2024}}
+
+@article{betley2025em, title={Emergent Misalignment: Narrow Finetuning Can Produce Broadly
+  Misaligned LLMs}, author={Betley, Jan and Tan, Daniel and Warncke, Niels and others},
+  journal={arXiv preprint arXiv:2502.17424}, year={2025}}
+
+@article{turner2025organisms, title={Model Organisms for Emergent Misalignment},
+  author={Turner, Edward and Soligo, Anna and Taylor, Mia and others},
+  journal={arXiv preprint arXiv:2506.11613}, year={2025}}
+
+@article{soligo2025convergent, title={Convergent Linear Representations of Emergent Misalignment},
+  author={Soligo, Anna and Turner, Edward and Taylor, Mia and others},
+  journal={arXiv preprint arXiv:2506.11618}, year={2025}}
+
+@article{biderman2024loralearnsless, title={LoRA Learns Less and Forgets Less},
+  author={Biderman, Dan and Portes, Jacob and Gonzalez Ortiz, Jose Javier and others},
+  journal={TMLR}, year={2024}}
+
+@inproceedings{shuttleworth2025illusion, title={LoRA vs Full Fine-tuning: An Illusion of
+  Equivalence}, author={Shuttleworth, Reece and Andreas, Jacob and Torralba, Antonio and
+  Sharma, Pratyusha}, booktitle={NeurIPS}, year={2025}}
+
+@inproceedings{loracles2026, title={LoRAcles: Self-Supervised Weight-Space Interpretability
+  at Scale}, author={De Schamphelaere, Celeste and Bauer, Jan and Nanda, Neel and Ong, Euan},
+  booktitle={ICML}, year={2026}}
+
+@article{rank1reasoning, title={Rank-1 LoRAs Encode Interpretable Reasoning Signals},
+  author={Ward, Jake and Riechers, Paul and Shai, Adam},
+  journal={arXiv preprint arXiv:2511.06739}, year={2025}}
+
+
+
+  % ============================================================
+% Suggested additional references for
+% "Seminar Report - LoRA Geometry" (H. Tomaszczak, HPI)
+%
+% Grouped by the section that needs them. Append to your
+% existing .bib; keys are chosen to avoid collisions.
+%
+% NOTE ON EXISTING FILE (all resolved):
+%   - hu2021lora removed; hu2022lora kept
+%   - sunPEFTGuardDetectingBackdoor2024 removed; sun2024peftguard kept
+%   - loracles2026 / rank1reasoning / puertolas2026weightspace now
+%     carry their real author lists
+% ============================================================
+
+
+% ------------------------------------------------------------
+% §2 Related Work — weight-space learning on whole models
+% ------------------------------------------------------------
+
+@inproceedings{schurholt2021hyperrep,
+  title     = {Self-Supervised Representation Learning on Neural Network Weights
+               for Model Characteristic Prediction},
+  author    = {Sch{\"u}rholt, Konstantin and Kostadinov, Dimche and Borth, Damian},
+  booktitle = {NeurIPS},
+  year      = {2021}
+}
+
+@inproceedings{schurholt2022modelzoos,
+  title     = {Model Zoos: A Dataset of Diverse Populations of Neural Network Models},
+  author    = {Sch{\"u}rholt, Konstantin and Taskiran, Diyar and Knyazev, Boris and
+               Gir{\'o}-i-Nieto, Xavier and Borth, Damian},
+  booktitle = {NeurIPS Datasets and Benchmarks Track},
+  year      = {2022}
+}
+
+@inproceedings{eilertsen2020classifying,
+  title     = {Classifying the Classifier: Dissecting the Weight Space of Neural Networks},
+  author    = {Eilertsen, Gabriel and J{\"o}nsson, Daniel and Ropinski, Timo and
+               Unger, Jonas and Ynnerman, Anders},
+  booktitle = {ECAI},
+  year      = {2020}
+}
+
+@inproceedings{ha2017hypernetworks,
+  title     = {HyperNetworks},
+  author    = {Ha, David and Dai, Andrew and Le, Quoc V.},
+  booktitle = {ICLR},
+  year      = {2017}
+}
+
+
+% ------------------------------------------------------------
+% §2 / §3.3 — weight-space symmetry and gauge freedom
+% ------------------------------------------------------------
+
+@inproceedings{hechtnielsen1990algebraic,
+  title     = {On the Algebraic Structure of Feedforward Network Weight Spaces},
+  author    = {Hecht-Nielsen, Robert},
+  booktitle = {Advanced Neural Computers},
+  pages     = {129--135},
+  year      = {1990},
+  publisher = {Elsevier}
+}
+
+@inproceedings{entezari2022permutation,
+  title     = {The Role of Permutation Invariance in Linear Mode Connectivity
+               of Neural Networks},
+  author    = {Entezari, Rahim and Sedghi, Hanie and Saukh, Olga and Neyshabur, Behnam},
+  booktitle = {ICLR},
+  year      = {2022}
+}
+
+@inproceedings{ainsworth2023gitrebasin,
+  title     = {Git Re-Basin: Merging Models modulo Permutation Symmetries},
+  author    = {Ainsworth, Samuel K. and Hayase, Jonathan and Srinivasa, Siddhartha},
+  booktitle = {ICLR},
+  year      = {2023}
+}
+
+@inproceedings{godfrey2022symmetries,
+  title     = {On the Symmetries of Deep Learning Models and their Internal Representations},
+  author    = {Godfrey, Charles and Brown, Davis and Emerson, Tegan and Kvinge, Henry},
+  booktitle = {NeurIPS},
+  year      = {2022}
+}
+
+
+% ------------------------------------------------------------
+% §1 / §2 — model merging (cosine similarity as a proxy)
+% ------------------------------------------------------------
+
+@inproceedings{yadav2023ties,
+  title     = {TIES-Merging: Resolving Interference When Merging Models},
+  author    = {Yadav, Prateek and Tam, Derek and Choshen, Leshem and
+               Raffel, Colin and Bansal, Mohit},
+  booktitle = {NeurIPS},
+  year      = {2023}
+}
+
+@inproceedings{yu2024dare,
+  title     = {Language Models are Super Mario: Absorbing Abilities from
+               Homologous Models as a Free Lunch},
+  author    = {Yu, Le and Yu, Bowen and Yu, Haiyang and Huang, Fei and Li, Yongbin},
+  booktitle = {ICML},
+  year      = {2024}
+}
+
+@inproceedings{wortsman2022modelsoups,
+  title     = {Model Soups: Averaging Weights of Multiple Fine-tuned Models
+               Improves Accuracy without Increasing Inference Time},
+  author    = {Wortsman, Mitchell and Ilharco, Gabriel and Gadre, Samir Ya and
+               Roelofs, Rebecca and Gontijo-Lopes, Raphael and others},
+  booktitle = {ICML},
+  year      = {2022}
+}
+
+@inproceedings{matena2022fisher,
+  title     = {Merging Models with Fisher-Weighted Averaging},
+  author    = {Matena, Michael and Raffel, Colin},
+  booktitle = {NeurIPS},
+  year      = {2022}
+}
+
+@inproceedings{huang2024lorahub,
+  title     = {LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition},
+  author    = {Huang, Chengsong and Liu, Qian and Lin, Bill Yuchen and Pang, Tianyu and
+               Du, Chao and Lin, Min},
+  booktitle = {COLM},
+  year      = {2024}
+}
+
+
+% ------------------------------------------------------------
+% §2 — PEFT background
+% ------------------------------------------------------------
+
+@inproceedings{houlsby2019adapters,
+  title     = {Parameter-Efficient Transfer Learning for NLP},
+  author    = {Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw and
+               Morrone, Bruna and de Laroussilhe, Quentin and Gesmundo, Andrea and
+               Attariyan, Mona and Gelly, Sylvain},
+  booktitle = {ICML},
+  year      = {2019}
+}
+
+@inproceedings{aghajanyan2021intrinsic,
+  title     = {Intrinsic Dimensionality Explains the Effectiveness of Language
+               Model Fine-Tuning},
+  author    = {Aghajanyan, Armen and Gupta, Sonal and Zettlemoyer, Luke},
+  booktitle = {ACL},
+  year      = {2021}
+}
+
+@inproceedings{li2018intrinsicdim,
+  title     = {Measuring the Intrinsic Dimension of Objective Landscapes},
+  author    = {Li, Chunyuan and Farkhoor, Heerad and Liu, Rosanne and Yosinski, Jason},
+  booktitle = {ICLR},
+  year      = {2018}
+}
+
+
+% ------------------------------------------------------------
+% §2 — scalable mechanistic interpretability anchors
+% ------------------------------------------------------------
+
+@article{bricken2023monosemanticity,
+  title   = {Towards Monosemanticity: Decomposing Language Models with
+             Dictionary Learning},
+  author  = {Bricken, Trenton and Templeton, Adly and Batson, Joshua and others},
+  journal = {Transformer Circuits Thread},
+  year    = {2023}
+}
+
+@inproceedings{cunningham2024sparse,
+  title     = {Sparse Autoencoders Find Highly Interpretable Features in Language Models},
+  author    = {Cunningham, Hoagy and Ewart, Aidan and Riggs, Logan and
+               Huben, Robert and Sharkey, Lee},
+  booktitle = {ICLR},
+  year      = {2024}
+}
+
+
+% ------------------------------------------------------------
+% §3.4, Tables 1–2 — geometric feature definitions
+% ------------------------------------------------------------
+
+@article{rudelson2007stablerank,
+  title   = {Sampling from Large Matrices: An Approach through Geometric
+             Functional Analysis},
+  author  = {Rudelson, Mark and Vershynin, Roman},
+  journal = {Journal of the ACM},
+  volume  = {54},
+  number  = {4},
+  year    = {2007}
+}
+
+@inproceedings{roy2007effectiverank,
+  title     = {The Effective Rank: A Measure of Effective Dimensionality},
+  author    = {Roy, Olivier and Vetterli, Martin},
+  booktitle = {European Signal Processing Conference (EUSIPCO)},
+  pages     = {606--610},
+  year      = {2007}
+}
+
+@article{bjorck1973principalangles,
+  title   = {Numerical Methods for Computing Angles between Linear Subspaces},
+  author  = {Bj{\"o}rck, {\AA}ke and Golub, Gene H.},
+  journal = {Mathematics of Computation},
+  volume  = {27},
+  number  = {123},
+  pages   = {579--594},
+  year    = {1973}
+}
+
+@article{hoerl1970ridge,
+  title   = {Ridge Regression: Biased Estimation for Nonorthogonal Problems},
+  author  = {Hoerl, Arthur E. and Kennard, Robert W.},
+  journal = {Technometrics},
+  volume  = {12},
+  number  = {1},
+  pages   = {55--67},
+  year    = {1970}
+}
+
+
+% ------------------------------------------------------------
+% §4.1 — base model, libraries, optimisation
+% ------------------------------------------------------------
+
+@article{grattafiori2024llama3,
+  title   = {The Llama 3 Herd of Models},
+  author  = {Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and others},
+  journal = {arXiv preprint arXiv:2407.21783},
+  year    = {2024}
+}
+
+@inproceedings{wolf2020transformers,
+  title     = {Transformers: State-of-the-Art Natural Language Processing},
+  author    = {Wolf, Thomas and Debut, Lysandre and Sanh, Victor and others},
+  booktitle = {EMNLP: System Demonstrations},
+  pages     = {38--45},
+  year      = {2020}
+}
+
+@misc{mangrulkar2022peft,
+  title  = {PEFT: State-of-the-art Parameter-Efficient Fine-Tuning Methods},
+  author = {Mangrulkar, Sourab and Gugger, Sylvain and Debut, Lysandre and
+            Belkada, Younes and Paul, Sayak and Bossan, Benjamin},
+  year   = {2022},
+  note   = {\url{https://github.com/huggingface/peft}}
+}
+
+@inproceedings{kingma2015adam,
+  title     = {Adam: A Method for Stochastic Optimization},
+  author    = {Kingma, Diederik P. and Ba, Jimmy},
+  booktitle = {ICLR},
+  year      = {2015}
+}
+
+@inproceedings{loshchilov2017sgdr,
+  title     = {SGDR: Stochastic Gradient Descent with Warm Restarts},
+  author    = {Loshchilov, Ilya and Hutter, Frank},
+  booktitle = {ICLR},
+  year      = {2017}
+}
+
+
+% ------------------------------------------------------------
+% §4.1.4 / Table 5 — evaluation protocol and metrics
+% ------------------------------------------------------------
+
+@inproceedings{brown2020gpt3,
+  title     = {Language Models are Few-Shot Learners},
+  author    = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and others},
+  booktitle = {NeurIPS},
+  year      = {2020}
+}
+
+@misc{gao2024lmeval,
+  title  = {The Language Model Evaluation Harness},
+  author = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and others},
+  year   = {2024},
+  doi    = {10.5281/zenodo.12608602},
+  note   = {\url{https://github.com/EleutherAI/lm-evaluation-harness}}
+}
+
+@article{brier1950verification,
+  title   = {Verification of Forecasts Expressed in Terms of Probability},
+  author  = {Brier, Glenn W.},
+  journal = {Monthly Weather Review},
+  volume  = {78},
+  number  = {1},
+  pages   = {1--3},
+  year    = {1950}
+}
+
+
+% ------------------------------------------------------------
+% §4.1.1, Table 3, Appendix C — the 15 training datasets
+% ------------------------------------------------------------
+
+@inproceedings{socher2013sst2,
+  title     = {Recursive Deep Models for Semantic Compositionality Over a
+               Sentiment Treebank},
+  author    = {Socher, Richard and Perelygin, Alex and Wu, Jean and Chuang, Jason and
+               Manning, Christopher D. and Ng, Andrew and Potts, Christopher},
+  booktitle = {EMNLP},
+  pages     = {1631--1642},
+  year      = {2013}
+}
+
+@inproceedings{maas2011imdb,
+  title     = {Learning Word Vectors for Sentiment Analysis},
+  author    = {Maas, Andrew L. and Daly, Raymond E. and Pham, Peter T. and
+               Huang, Dan and Ng, Andrew Y. and Potts, Christopher},
+  booktitle = {ACL},
+  pages     = {142--150},
+  year      = {2011}
+}
+
+@inproceedings{pang2005rottentomatoes,
+  title     = {Seeing Stars: Exploiting Class Relationships for Sentiment
+               Categorization with Respect to Rating Scales},
+  author    = {Pang, Bo and Lee, Lillian},
+  booktitle = {ACL},
+  pages     = {115--124},
+  year      = {2005}
+}
+
+@inproceedings{pang2004subj,
+  title     = {A Sentimental Education: Sentiment Analysis Using Subjectivity
+               Summarization Based on Minimum Cuts},
+  author    = {Pang, Bo and Lee, Lillian},
+  booktitle = {ACL},
+  pages     = {271--278},
+  year      = {2004}
+}
+
+@inproceedings{zhang2015charcnn,
+  title     = {Character-level Convolutional Networks for Text Classification},
+  author    = {Zhang, Xiang and Zhao, Junbo and LeCun, Yann},
+  booktitle = {NeurIPS},
+  year      = {2015},
+  note      = {Source of the yelp\_polarity and amazon\_polarity splits}
+}
+
+@inproceedings{mcauley2013amazon,
+  title     = {Hidden Factors and Hidden Topics: Understanding Rating Dimensions
+               with Review Text},
+  author    = {McAuley, Julian and Leskovec, Jure},
+  booktitle = {RecSys},
+  pages     = {165--172},
+  year      = {2013}
+}
+
+@misc{jigsaw2018toxic,
+  title  = {Toxic Comment Classification Challenge},
+  author = {{cjadams} and Sorensen, Jeffrey and Elliott, Julia and Dixon, Lucas and
+            McDonald, Mark and {nithum} and Cukierski, Will},
+  year   = {2017},
+  howpublished = {Kaggle},
+  note   = {\url{https://kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge}}
+}
+
+@inproceedings{hartvigsen2022toxigen,
+  title     = {ToxiGen: A Large-Scale Machine-Generated Dataset for Adversarial
+               and Implicit Hate Speech Detection},
+  author    = {Hartvigsen, Thomas and Gabriel, Saadia and Palangi, Hamid and
+               Sap, Maarten and Ray, Dipankar and Kamar, Ece},
+  booktitle = {ACL},
+  year      = {2022}
+}
+
+@inproceedings{borkan2019civilcomments,
+  title     = {Nuanced Metrics for Measuring Unintended Bias with Real Data for
+               Text Classification},
+  author    = {Borkan, Daniel and Dixon, Lucas and Sorensen, Jeffrey and
+               Thain, Nithum and Vasserman, Lucy},
+  booktitle = {Companion Proceedings of The Web Conference (WWW)},
+  pages     = {491--500},
+  year      = {2019}
+}
+
+@inproceedings{han2024wildguard,
+  title     = {WildGuard: Open One-Stop Moderation Tools for Safety Risks,
+               Jailbreaks, and Refusals of LLMs},
+  author    = {Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and
+               Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha},
+  booktitle = {NeurIPS Datasets and Benchmarks Track},
+  year      = {2024}
+}
+
+@inproceedings{wang2018glue,
+  title     = {GLUE: A Multi-Task Benchmark and Analysis Platform for Natural
+               Language Understanding},
+  author    = {Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and
+               Levy, Omer and Bowman, Samuel R.},
+  booktitle = {BlackboxNLP Workshop at EMNLP},
+  pages     = {353--355},
+  year      = {2018},
+  note      = {Source of the QNLI task}
+}
+
+@inproceedings{rajpurkar2016squad,
+  title     = {SQuAD: 100,000+ Questions for Machine Comprehension of Text},
+  author    = {Rajpurkar, Pranav and Zhang, Jian and Lopyrev, Konstantin and
+               Liang, Percy},
+  booktitle = {EMNLP},
+  pages     = {2383--2392},
+  year      = {2016}
+}
+
+@inproceedings{khot2018scitail,
+  title     = {SciTail: A Textual Entailment Dataset from Science Question Answering},
+  author    = {Khot, Tushar and Sabharwal, Ashish and Clark, Peter},
+  booktitle = {AAAI},
+  year      = {2018}
+}
+
+@inproceedings{yin2021docnli,
+  title     = {DocNLI: A Large-scale Dataset for Document-level Natural Language
+               Inference},
+  author    = {Yin, Wenpeng and Radev, Dragomir and Xiong, Caiming},
+  booktitle = {Findings of ACL-IJCNLP},
+  pages     = {4913--4922},
+  year      = {2021}
+}
+
+@inproceedings{schuster2021vitaminc,
+  title     = {Get Your Vitamin C! Robust Fact Verification with Contrastive Evidence},
+  author    = {Schuster, Tal and Fisch, Adam and Barzilay, Regina},
+  booktitle = {NAACL-HLT},
+  pages     = {624--643},
+  year      = {2021}
+}
+
+@inproceedings{clark2019boolq,
+  title     = {BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions},
+  author    = {Clark, Christopher and Lee, Kenton and Chang, Ming-Wei and
+               Kwiatkowski, Tom and Collins, Michael and Toutanova, Kristina},
+  booktitle = {NAACL-HLT},
+  pages     = {2924--2936},
+  year      = {2019}
+}
+
+
+% ------------------------------------------------------------
+% §5.2.1 — layer-wise relevance propagation
+% ------------------------------------------------------------
+
+@article{bach2015lrp,
+  title   = {On Pixel-Wise Explanations for Non-Linear Classifier Decisions by
+             Layer-Wise Relevance Propagation},
+  author  = {Bach, Sebastian and Binder, Alexander and Montavon, Gr{\'e}goire and
+             Klauschen, Frederick and M{\"u}ller, Klaus-Robert and Samek, Wojciech},
+  journal = {PLOS ONE},
+  volume  = {10},
+  number  = {7},
+  pages   = {e0130140},
+  year    = {2015}
+}
+
+@incollection{montavon2019lrpoverview,
+  title     = {Layer-Wise Relevance Propagation: An Overview},
+  author    = {Montavon, Gr{\'e}goire and Binder, Alexander and Lapuschkin, Sebastian and
+               Samek, Wojciech and M{\"u}ller, Klaus-Robert},
+  booktitle = {Explainable AI: Interpreting, Explaining and Visualizing Deep Learning},
+  editor    = {Samek, Wojciech and Montavon, Gr{\'e}goire and Vedaldi, Andrea and
+               Hansen, Lars Kai and M{\"u}ller, Klaus-Robert},
+  pages     = {193--209},
+  year      = {2019},
+  publisher = {Springer}
+}
+
+@inproceedings{ali2022xaitransformers,
+  title     = {XAI for Transformers: Better Explanations through Conservative
+               Propagation},
+  author    = {Ali, Ameen and Schnake, Thomas and Eberle, Oliver and
+               Montavon, Gr{\'e}goire and M{\"u}ller, Klaus-Robert and Wolf, Lior},
+  booktitle = {ICML},
+  year      = {2022}
+}
+
+@inproceedings{achtibat2024attnlrp,
+  title     = {AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for
+               Transformers},
+  author    = {Achtibat, Reduan and Hatefi, Sayed Mohammad Vakilzadeh and
+               Dreyer, Maximilian and Jain, Aakriti and Wiegand, Thomas and
+               Lapuschkin, Sebastian and Samek, Wojciech},
+  booktitle = {ICML},
+  year      = {2024}
+}
+
+
+% ------------------------------------------------------------
+% §5.2.2 — ablation, sufficiency, causal attribution
+% ------------------------------------------------------------
+
+@inproceedings{deyoung2020eraser,
+  title     = {ERASER: A Benchmark to Evaluate Rationalized NLP Models},
+  author    = {DeYoung, Jay and Jain, Sarthak and Rajani, Nazneen Fatema and
+               Lehman, Eric and Xiong, Caiming and Socher, Richard and Wallace, Byron C.},
+  booktitle = {ACL},
+  pages     = {4443--4458},
+  year      = {2020},
+  note      = {Source of the comprehensiveness / sufficiency framing}
+}
+
+@inproceedings{vig2020causalmediation,
+  title     = {Investigating Gender Bias in Language Models Using Causal Mediation
+               Analysis},
+  author    = {Vig, Jesse and Gehrmann, Sebastian and Belinkov, Yonatan and
+               Qian, Sharon and Nevo, Daniel and Singer, Yaron and Shieber, Stuart},
+  booktitle = {NeurIPS},
+  year      = {2020}
+}
+
+@inproceedings{meng2022rome,
+  title     = {Locating and Editing Factual Associations in GPT},
+  author    = {Meng, Kevin and Bau, David and Andonian, Alex and Belinkov, Yonatan},
+  booktitle = {NeurIPS},
+  year      = {2022}
+}
+
+@inproceedings{zhang2024patching,
+  title     = {Towards Best Practices of Activation Patching in Language Models:
+               Metrics and Methods},
+  author    = {Zhang, Fred and Nanda, Neel},
+  booktitle = {ICLR},
+  year      = {2024}
+}
+
+
+% ------------------------------------------------------------
+% §5.2.3 / Appendix F — residual stream, logit lens, probing
+% ------------------------------------------------------------
+
+@article{elhage2021framework,
+  title   = {A Mathematical Framework for Transformer Circuits},
+  author  = {Elhage, Nelson and Nanda, Neel and Olsson, Catherine and others},
+  journal = {Transformer Circuits Thread},
+  year    = {2021},
+  note    = {\url{https://transformer-circuits.pub/2021/framework/index.html}}
+}
+
+@misc{nostalgebraist2020logitlens,
+  title  = {Interpreting GPT: The Logit Lens},
+  author = {{nostalgebraist}},
+  year   = {2020},
+  howpublished = {LessWrong},
+  note   = {\url{https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens}}
+}
+
+@article{belrose2023tunedlens,
+  title   = {Eliciting Latent Predictions from Transformers with the Tuned Lens},
+  author  = {Belrose, Nora and Furman, Zach and Smith, Logan and Halawi, Danny and
+             Ostrovsky, Igor and McKinney, Lev and Biderman, Stella and Steinhardt, Jacob},
+  journal = {arXiv preprint arXiv:2303.08112},
+  year    = {2023}
+}
+
+@inproceedings{geva2021keyvalue,
+  title     = {Transformer Feed-Forward Layers Are Key-Value Memories},
+  author    = {Geva, Mor and Schuster, Roei and Berant, Jonathan and Levy, Omer},
+  booktitle = {EMNLP},
+  pages     = {5484--5495},
+  year      = {2021}
+}
+
+@inproceedings{geva2022promoting,
+  title     = {Transformer Feed-Forward Layers Build Predictions by Promoting
+               Concepts in the Vocabulary Space},
+  author    = {Geva, Mor and Caciularu, Avi and Wang, Kevin Ro and Goldberg, Yoav},
+  booktitle = {EMNLP},
+  pages     = {30--45},
+  year      = {2022}
+}
+
+@inproceedings{xiao2024attentionsink,
+  title     = {Efficient Streaming Language Models with Attention Sinks},
+  author    = {Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and
+               Lewis, Mike},
+  booktitle = {ICLR},
+  year      = {2024}
+}
+
+@inproceedings{sun2024massiveactivations,
+  title     = {Massive Activations in Large Language Models},
+  author    = {Sun, Mingjie and Chen, Xinlei and Kolter, J. Zico and Liu, Zhuang},
+  booktitle = {COLM},
+  year      = {2024}
+}
+
+@inproceedings{hewitt2019controltasks,
+  title     = {Designing and Interpreting Probes with Control Tasks},
+  author    = {Hewitt, John and Liang, Percy},
+  booktitle = {EMNLP-IJCNLP},
+  pages     = {2733--2743},
+  year      = {2019}
+}
+
+@article{belinkov2022probing,
+  title   = {Probing Classifiers: Promises, Shortcomings, and Advances},
+  author  = {Belinkov, Yonatan},
+  journal = {Computational Linguistics},
+  volume  = {48},
+  number  = {1},
+  pages   = {207--219},
+  year    = {2022}
+}
+
+
+% ------------------------------------------------------------
+% §6 Limitations — prompt / template sensitivity
+% ------------------------------------------------------------
+
+@inproceedings{sclar2024formatspread,
+  title     = {Quantifying Language Models' Sensitivity to Spurious Features in
+               Prompt Design},
+  author    = {Sclar, Melanie and Choi, Yejin and Tsvetkov, Yulia and Suhr, Alane},
+  booktitle = {ICLR},
+  year      = {2024}
+}
+
+@article{mizrahi2024multiprompt,
+  title   = {State of What Art? A Call for Multi-Prompt LLM Evaluation},
+  author  = {Mizrahi, Moran and Kaplan, Guy and Malkin, Dan and Dror, Rotem and
+             Shahaf, Dafna and Stanovsky, Gabriel},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume  = {12},
+  pages   = {933--949},
+  year    = {2024}
+}
+
+
+% ------------------------------------------------------------
+% §7 Conclusion — shortcut learning / provenance artefacts
+% ------------------------------------------------------------
+
+@article{geirhos2020shortcut,
+  title   = {Shortcut Learning in Deep Neural Networks},
+  author  = {Geirhos, Robert and Jacobsen, J{\"o}rn-Henrik and Michaelis, Claudio and
+             Zemel, Richard and Brendel, Wieland and Bethge, Matthias and
+             Wichmann, Felix A.},
+  journal = {Nature Machine Intelligence},
+  volume  = {2},
+  number  = {11},
+  pages   = {665--673},
+  year    = {2020}
+}
+
+@article{lapuschkin2019cleverhans,
+  title   = {Unmasking Clever Hans Predictors and Assessing What Machines Really Learn},
+  author  = {Lapuschkin, Sebastian and W{\"a}ldchen, Stephan and Binder, Alexander and
+             Montavon, Gr{\'e}goire and Samek, Wojciech and M{\"u}ller, Klaus-Robert},
+  journal = {Nature Communications},
+  volume  = {10},
+  number  = {1},
+  pages   = {1096},
+  year    = {2019}
+}

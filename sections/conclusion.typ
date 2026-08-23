@@ -1,0 +1,8 @@
+#import "@preview/pergamon:0.7.1": citep
+
+= Conclusion
+Predicting performance metrics from adapter weights is promising in-task: our weight-space method calibrates well on held-out SST2 adapters. Robustness across training datasets, however, is limited to ranking, while order is largely preserved, but absolute predictions across unseen datasets largely fail.
+
+The interpretability experiments give only limited evidence for genuine capability-driven prediction. The adapter ablations show that the adapter's capabilities are redundantly encoded and partly overlap with the LRP relevance map, and the U-V experiments show that the directions the meta model reads align with where the base model writes its decision, evidence that the probe targets a causally meaningful location, though we stop short of causal evidence. Set against the weak cross-dataset generalisation, this does not support strong, capability-driven prediction.
+
+We could not establish a clear weight-space-to-capability mapping. What is clear is that the weight-space clusters far more by training conditions, such as hyperparameters and dataset, than by capability. Capabilities correlate with training conditions in some setups, but that correlation is incidental and can break down, which is precisely why weight-space methods that appear to read capability may in fact be reading provenance — a weight-space instance of shortcut learning #citep("geirhos2020shortcut") #citep("lapuschkin2019cleverhans"). Future evaluations of such methods should therefore span a wide range of training conditions (in particular across more diverse datasets), so that apparent generalisation is not merely a provenance artefact.

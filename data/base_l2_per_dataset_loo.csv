@@ -1,0 +1,16 @@
+dataset,family,acc_r2,acc_spearman
+imdb,sentiment,0.597,0.640
+rotten_tomatoes,sentiment,0.594,0.827
+yelp_polarity,sentiment,0.589,0.706
+amazon_polarity,sentiment,0.010,0.813
+wiki_toxic,toxicity,0.179,0.778
+toxigen,toxicity,-0.079,0.715
+civil_comments,toxicity,-0.172,0.861
+wildguard_prompt_harm,toxicity,-0.204,0.295
+qnli,entailment,0.214,0.499
+scitail,entailment,-5.499,0.280
+doc_nli,entailment,-0.761,0.301
+vitaminc,entailment,0.165,0.557
+boolq,qa,0.186,0.664
+subj,subjectivity,-0.171,0.408
+sst2,sst2,0.162,0.805

@@ -1,0 +1,11 @@
+model,metric,r2,spearman,n_seeds,source_experiment
+w8_l2,f1,0.8160,0.9524,4,2026-08-25_gl-regressor-complexity-ladder
+w8_l2,auroc,0.8778,0.9381,4,2026-08-25_gl-regressor-complexity-ladder
+w8_l2,brier,0.9123,0.9547,4,2026-08-25_gl-regressor-complexity-ladder
+w8_l2,meanconf,0.9560,0.9342,4,2026-08-25_gl-regressor-complexity-ladder
+w8_l2,nll,0.9101,0.9432,4,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,f1,0.7970,0.9546,1,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,auroc,0.8640,0.9465,1,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,brier,0.9058,0.9554,1,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,meanconf,0.9507,0.9415,1,2026-08-25_gl-regressor-complexity-ladder
+w32_l2,nll,0.9124,0.9446,1,2026-08-25_gl-regressor-complexity-ladder
